@@ -36,6 +36,7 @@ class ListPresenter {
 
 extension ListPresenter: ListPresenterType {
     func getData() {
+        viewController?.showLoading()
         interactor?.getUser { result in
             switch result {
             case .success(let user):
@@ -48,6 +49,7 @@ extension ListPresenter: ListPresenterType {
             case .failure(let message):
                 self.viewController?.showAlert(title: "Attention", message: message)
             }
+            self.viewController?.hideLoading()
         }
     }
 

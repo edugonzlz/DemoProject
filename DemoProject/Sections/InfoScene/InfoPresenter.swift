@@ -25,7 +25,7 @@ class InfoPresenter {
 
 extension InfoPresenter: InfoPresenterType {
     func navigateToRepo() {
-        URL(string: "https://github.com/edugonzlz")?.openInApp()
+        URL(string: "https://github.com/edugonzlz/DemoProject")?.openInApp()
     }
 
     func logout() {

@@ -25,8 +25,22 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBT-EE-i2v">
+                    <rect key="frame" x="16" y="76" width="382" height="49"/>
+                    <string key="text">*Shake for toggle Mock Mode
+(TabBar changes to red color)</string>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                    <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data for demo -&gt; User: 50289527G, pass: 1234" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsP-wx-Bq7">
+                    <rect key="frame" x="16" y="133" width="382" height="14.5"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="17z-K2-wx2">
-                    <rect key="frame" x="16" y="175" width="382" height="124"/>
+                    <rect key="frame" x="16" y="179.5" width="382" height="124"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your username..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d3i-03-T2j">
                             <rect key="frame" x="0.0" y="0.0" width="382" height="30"/>
@@ -70,7 +84,7 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cB-4K-qjr">
-                    <rect key="frame" x="16" y="349" width="382" height="50"/>
+                    <rect key="frame" x="16" y="353.5" width="382" height="50"/>
                     <color key="backgroundColor" red="0.6087564821" green="0.80513902140000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="Zih-rv-tll"/>
@@ -81,25 +95,20 @@
                         <action selector="loginButton:" destination="-1" eventType="touchUpInside" id="7Pp-hN-Pof"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBT-EE-i2v">
-                    <rect key="frame" x="16" y="76" width="382" height="49"/>
-                    <string key="text">*Shake for toggle Mock Mode
-(TabBar changes to red color)</string>
-                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
-                    <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="2cB-4K-qjr" firstAttribute="top" secondItem="17z-K2-wx2" secondAttribute="bottom" constant="50" id="2We-ux-khv"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2cB-4K-qjr" secondAttribute="trailing" constant="16" id="5C9-pp-CJe"/>
+                <constraint firstItem="17z-K2-wx2" firstAttribute="top" secondItem="hsP-wx-Bq7" secondAttribute="bottom" constant="32" id="6R0-Fg-0Jg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hsP-wx-Bq7" secondAttribute="trailing" constant="16" id="H0f-0E-qfy"/>
                 <constraint firstItem="2cB-4K-qjr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="K9U-4b-2NK"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="17z-K2-wx2" secondAttribute="trailing" constant="16" id="QUk-2b-HK7"/>
+                <constraint firstItem="hsP-wx-Bq7" firstAttribute="top" secondItem="BBT-EE-i2v" secondAttribute="bottom" constant="8" id="SFw-kv-KF0"/>
                 <constraint firstItem="17z-K2-wx2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="XUd-yK-f2G"/>
                 <constraint firstItem="BBT-EE-i2v" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="32" id="YLG-dS-B0t"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="BBT-EE-i2v" secondAttribute="trailing" constant="16" id="Zuj-xE-dyD"/>
-                <constraint firstItem="17z-K2-wx2" firstAttribute="top" secondItem="BBT-EE-i2v" secondAttribute="bottom" constant="50" id="cOr-NW-LiN"/>
+                <constraint firstItem="hsP-wx-Bq7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="qQh-e5-iUs"/>
                 <constraint firstItem="BBT-EE-i2v" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="vdp-uo-gzN"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
