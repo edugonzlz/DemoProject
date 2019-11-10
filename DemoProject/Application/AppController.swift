@@ -19,6 +19,7 @@ class AppController: UITabBarController {
         self.becomeFirstResponder()
     }
     
+    // MARK: - Gesture methods
     override var canBecomeFirstResponder: Bool {
         return true
     }
@@ -37,5 +38,4 @@ extension AppController: AppControllerType {
     func setTabBar(color: UIColor) {
         self.tabBar.backgroundColor = color
     }
-
 }

@@ -21,10 +21,9 @@ extension LoginService: LoginServiceType {
         url.appendPathComponent(URLConstants.login)
         
         let params = ["user": username,
-                      "password": password
-        ]
+                      "password": password]
         var resource = Resource(method: .post, url: url, parameters: params, headers: nil)
-       
+        
         if username == "50289527G", password == "1234" {
             resource.dataMock = getDataFromFile(named: "loginEntityMock")
         }

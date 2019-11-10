@@ -2,12 +2,12 @@ import Foundation
 
 struct UserTableData {
     let username: String
-    let data: [UserSection]
-}
-
-enum UserSection {
-    case accounts(items: [AccountEntity])
-    case cards(items: [CardEntity])
+    let data: [Section]
+    
+    enum Section {
+        case accounts(items: [AccountEntity])
+        case cards(items: [CardEntity])
+    }
 }
 
 protocol ListPresenterType {
@@ -41,8 +41,8 @@ extension ListPresenter: ListPresenterType {
             switch result {
             case .success(let user):
                 let data = UserTableData(username: user.name,
-                                         data: [UserSection.accounts(items: user.accounts),
-                                                UserSection.cards(items: user.cards)])
+                                         data: [UserTableData.Section.accounts(items: user.accounts),
+                                                UserTableData.Section.cards(items: user.cards)])
                 self.data = data
                 self.viewController?.present(data: data)
                 

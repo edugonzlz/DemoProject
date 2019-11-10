@@ -36,12 +36,12 @@ extension AppPresenter: AppPresenterType {
         case .network:
             Config.appConnectionMode = .localMocks
             title = "Attention"
-            message = "Activating the simulated mode"
+            message = "Activating the SIMULATED MODE"
             self.setTabBarColor()
         case .localMocks:
             Config.appConnectionMode = .network
             title = "Attention"
-            message = "Activating the network mode"
+            message = "Activating the NETWORK MODE"
             self.setTabBarColor()
         }
         let alert = AlertController.alert(title: title, message: message)
@@ -86,7 +86,6 @@ fileprivate extension AppPresenter {
     func configure(tabBarItem: UITabBarItem,
                    insets: UIEdgeInsets,
                    titleOffset: UIOffset) {
-//        tabBarItem.image = tabBarItem.image?.withRenderingMode(.alwaysOriginal)
         tabBarItem.imageInsets = insets
         tabBarItem.titlePositionAdjustment = titleOffset
     }

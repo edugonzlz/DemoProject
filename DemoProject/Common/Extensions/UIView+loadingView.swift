@@ -22,10 +22,6 @@ extension UIView {
     
     func showLoading() {
         let view = LoadingView.instantiate()
-        
-//        let view = UINib(nibName: String(describing: LoadingView.self), bundle: nil)
-//            .instantiate(withOwner: nil, options: nil).first as! LoadingView
-//        view.translatesAutoresizingMaskIntoConstraints = false
         view.setup()
         loadingView = view
     }
