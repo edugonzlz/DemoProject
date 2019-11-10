@@ -29,11 +29,11 @@ class ListViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.getData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        presenter.getData()
         tableView.deselectSelectedRow(animated: true)
     }
 }
