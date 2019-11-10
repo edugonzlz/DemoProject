@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="117" id="KGk-i7-Jjw" customClass="CardTableViewCell" customModule="DemoProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="117"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="116.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8v6-lt-5R8" userLabel="Alias">
+                        <rect key="frame" x="136" y="16" width="48" height="24"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85i-Ea-w4o" userLabel="Pan">
+                        <rect key="frame" x="139" y="48" width="42" height="21"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enu-gG-OKm" userLabel="Balance">
+                        <rect key="frame" x="143.5" y="77" width="33" height="23.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="enu-gG-OKm" secondAttribute="bottom" constant="16" id="55h-1m-I9p"/>
+                    <constraint firstItem="85i-Ea-w4o" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="LH6-6c-rH2"/>
+                    <constraint firstItem="enu-gG-OKm" firstAttribute="top" secondItem="85i-Ea-w4o" secondAttribute="bottom" constant="8" id="MXC-Ko-oYn"/>
+                    <constraint firstItem="8v6-lt-5R8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Nc4-yt-ODR"/>
+                    <constraint firstItem="enu-gG-OKm" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Rbr-RE-71q"/>
+                    <constraint firstItem="85i-Ea-w4o" firstAttribute="top" secondItem="8v6-lt-5R8" secondAttribute="bottom" constant="8" id="SJE-LC-YoJ"/>
+                    <constraint firstItem="8v6-lt-5R8" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="pjG-Az-VRW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="aliasLabel" destination="8v6-lt-5R8" id="yWi-gp-PO7"/>
+                <outlet property="balanceLabel" destination="enu-gG-OKm" id="uMu-S8-ztZ"/>
+                <outlet property="panLabel" destination="85i-Ea-w4o" id="TaN-Fy-gmx"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="112.16517857142857"/>
+        </tableViewCell>
+    </objects>
+</document>

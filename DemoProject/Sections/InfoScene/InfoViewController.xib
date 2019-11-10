@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InfoViewController" customModule="DemoProject" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="5fC-Ul-a8b"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flV-TD-R4f">
+                    <rect key="frame" x="16" y="194" width="382" height="50"/>
+                    <color key="backgroundColor" red="0.6087564821" green="0.80513902140000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Xc8-DQ-3Z0"/>
+                    </constraints>
+                    <state key="normal" title="Link to github repository"/>
+                    <connections>
+                        <action selector="navigateToRepoButton:" destination="-1" eventType="touchUpInside" id="Gfz-lA-60S"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHy-yY-xeK">
+                    <rect key="frame" x="16" y="276" width="382" height="50"/>
+                    <color key="backgroundColor" red="0.6087564821" green="0.80513902140000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="DGr-s3-Tmb"/>
+                    </constraints>
+                    <state key="normal" title="Log out"/>
+                    <connections>
+                        <action selector="logoutButton:" destination="-1" eventType="touchUpInside" id="Ct7-bN-tg1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="flV-TD-R4f" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="150" id="D96-vM-H2t"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cHy-yY-xeK" secondAttribute="trailing" constant="16" id="FvO-fH-1Rb"/>
+                <constraint firstItem="cHy-yY-xeK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="LUp-o5-ahJ"/>
+                <constraint firstItem="cHy-yY-xeK" firstAttribute="top" secondItem="flV-TD-R4f" secondAttribute="bottom" constant="32" id="Lww-KK-rCf"/>
+                <constraint firstItem="flV-TD-R4f" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="c4s-yS-e4X"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="flV-TD-R4f" secondAttribute="trailing" constant="16" id="cw5-33-vh6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
